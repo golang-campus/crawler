@@ -13,6 +13,7 @@ import (
 )
 
 func Fetch(url string) ([]byte, error) {
+	//time.Sleep(time.Second * 2)
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err

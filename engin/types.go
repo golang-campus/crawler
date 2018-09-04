@@ -7,9 +7,9 @@ type Request struct {
 
 type ParseResult struct {
 	Requests []Request
-	Items   []interface{}
+	Items    []interface{}
 }
 
-func NilParser([]byte) ParseResult{
+func NilParser([]byte) ParseResult {
 	return ParseResult{}
 }
